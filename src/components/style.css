@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 .header{
     display: flex;
@@ -9,7 +9,6 @@
 }
 .navbar{
     display: flex;
-    margin-left: 5%;
     font-size: 32px;
     
 }
@@ -28,35 +27,70 @@
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
+    color: white;
 }
 
 .items li{
     margin: 4%;
     text-decoration: none;
     display: inline-flex;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
 }
 
 .title{
-    margin-left: 5%;
+
     width: 50%;
 }
+.printed-text{
+    width: 28ch;
+    font-size: 60px;
+    font-weight: 700;   
+    font-family: monospace;
+    overflow:hidden;
+    white-space: nowrap;
+    animation: 
+        printed-text 5s steps(28);
+
+}
+
+/* @keyframes flashing-border{
+    0%{
+        border-color: white;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: white;
+    }
+} */
+
+@keyframes printed-text{
+    from{width: 0;}
+    to {width: 100%}
+}
+
 .head{
     font-size: 60px;
     font-weight: 700;   
 }
-.title button{
-    background-color: orange;
-    color: white;
-    font-size: 20px;
-}
+
 
 
 .about{
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 5%
     
+}
+.properties{
+    display: flex;
+    justify-content: space-between;
 }
 
 .params{
@@ -81,12 +115,46 @@ width: 50%;
 
 .sides{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    gap: 100px;
 
 }
 
-.leftSide{
+.rightSide{
     width: 30%;
 }
 
+
+.text{
+    display: flex;
+    width: 50%;
+    flex-direction: column ;
+}
+
+.signature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    font-size: 20px;
+}
+
+.socialMedia{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.listLeft li a{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.link a {
+    padding: 5px;
+    background: #FF6E31;
+    color: #FFEBB7;
+    font-size: 28px;
+    font-weight: 700;
+  }
